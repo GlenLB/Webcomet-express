@@ -1,0 +1,36 @@
+<%- include("partials/head", {titre, description, urlCanonique}) %>
+<main>
+	<div class="box" id="box1">
+		<span class="box-header">
+			<h2>Création de site internet</h2>
+		</span>
+		<span class="box-main">
+			<img id="creation_site_web_img" src="/img/creation_site_web.png" alt="Webmaster Pacé Rennes">
+			<div class="box-text">
+				<p>Vous avez trouvé le <strong>webmaster</strong> qu'il vous faut pour créer votre site vitrine</p>
+				<a class="newButton" href="/webmaster-creation-site-vitrine">En savoir plus</a>
+			</div>
+		</span>
+	</div>
+
+	<div class="box">
+		<span class="box-header">
+			<h2>Référencement naturel SEO</h2>
+		</span>
+		<span class="box-main">
+			<div class="box-text">
+				<p>Améliorons les positions de votre site web sur les moteurs de recherche</p>
+				<a class="newButton" href="/consultant-seo">En savoir plus</a>
+			</div>
+			<img id="seo_img" src="/img/seo.png" alt="Consultant SEO Pacé Rennes">
+		</span>
+	</div>
+
+	<!-- INCLUSION DU FORMULAIRE -->
+	<%- include("partials/formulaireContact") %>
+</main>
+<!-- INCLUSION DU FOOTER -->
+<%- include("partials/footer") %>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<%- include("partials/head", {titre, description, urlCanonique}) %>
+    <main>
+        <div class="content" id="elem1">
+            <p>
+                <img src="/img/404.png" alt="Erreur 404" />
+            </p>
+            <h2>La page demandée n'existe pas.</h2>
+            <p>
+                <a class="newButton" href="/">Retourner à l'accueil</a>
+            </p>
+        </div>
+
+        <%- include("partials/formulaireContact") %>
+    </main>
+
+    <%- include("partials/footer") %>
+</body>
+</html>
