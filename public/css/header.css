@@ -1,0 +1,205 @@
+#logo {
+    color: white;
+    font-size: 24px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    z-index: 3;
+}
+
+#menu>span {
+    transition: all .4s;
+    width: 35px;
+    height: 4px;
+    background: white;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+#menu>span :last-child {
+    margin-bottom: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin: 0px;
+}
+
+#nav-link a {
+    color: white;
+    font-weight: bold;
+}
+
+#nav-link a:first-child {
+    margin-right: 40px;
+}
+
+.invisible {
+    transition: all .2s;
+    position: absolute;
+    top: 37px;
+    right: -200px;
+    opacity: 0;
+}
+
+.visible {
+    transition: all .2s;
+    position: absolute;
+    top: 37px;
+    right: 25%;
+    opacity: 1;
+}
+
+@media all and (max-width: 950px) {
+    .visible {
+        top: 80px;
+        right: 30px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .visible {
+        top: 37px;
+        right: 35%;
+    }
+}
+
+#header {
+    background: var(--couleur-primaire);
+    padding-bottom: 180px;
+}
+
+#header h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+#header .lien-logo {
+    border-bottom: 0px;
+    outline: none;
+}
+
+#header .lien-logo:hover {
+    border-bottom: 0px;
+}
+
+.separator {
+    display: block;
+    height: 200px;
+    width: 150%;
+    transform: rotate(-15deg);
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+.separator2 {
+    display: block;
+    height: 200px;
+    width: 150%;
+    transform: rotate(15deg);
+    background: white;
+    position: relative;
+    z-index: 2;
+    top: -200px;
+}
+
+.separator-container {
+    margin-top: -50px;
+    margin-bottom: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+#header-container .newButton {
+    box-shadow: none;
+    position: relative;
+    top: 10px;
+    max-width: 400px;
+}
+
+@media all and (max-width: 950px) {
+    #header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        padding-top: 30px;
+    }
+    #header-container .newButton {
+        top: 0px;
+        margin-top: 5px;
+        margin-bottom: -10px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    nav, #header-container {
+        width: 1100px;
+    }
+    nav {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 500px;
+    }
+    #header-container {
+        padding: 0px;
+        padding-top: 80px;
+    }
+    .separator {
+        display: block;
+        height: 700px;
+        width: 150%;
+        transform: rotate(-10deg);
+        background: white;
+        position: relative;
+        z-index: 2;
+    }
+    .separator2 {
+        display: block;
+        height: 700px;
+        width: 150%;
+        transform: rotate(10deg);
+        background: white;
+        position: relative;
+        z-index: 2;
+        top: -700px;
+    }
+    .separator-container {
+        margin-top: -350px;
+        margin-bottom: -380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

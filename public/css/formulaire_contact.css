@@ -1,0 +1,80 @@
+/* form>.btn {
+    margin-top: 10px;
+    width: 370px;
+} */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form>.newButton {
+    box-shadow: none;
+    margin-top: 10px;
+    width: 380px;
+    border-radius: 5px;
+}
+
+form>.newButton:hover {
+    box-shadow: none;
+}
+
+input[type="email"], textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border: 0px;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+}
+
+input {
+    font-family: "Open Sans", sans-serif;
+}
+
+input[type="email"] {
+    max-width: 400px;
+    width: 400px;
+}
+
+textarea {
+    max-width: 400px;
+    width: 400px;
+    height: 300px;
+}
+
+::placeholder {
+    color: black;
+}
+
+@media all and (max-width: 480px) {
+    input[type="email"] {
+        max-width: 200px;
+        width: 200px;
+    }
+
+    textarea {
+        max-width: 200px;
+        width: 200px;
+    }
+
+    form>.newButton {
+        width: 180px
+    }
+}
+
+.contact_box {
+    background: var(--couleur-primaire);
+    padding: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  @media all and (max-width: 950px) {
+    .contact_box {
+      margin-top: -10px;
+    }
+  }
