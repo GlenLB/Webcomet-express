@@ -60,7 +60,7 @@ nav {
 .invisible {
     transition: all .2s;
     position: absolute;
-    top: 37px;
+    top: 45px;
     right: -200px;
     opacity: 0;
 }
@@ -68,8 +68,8 @@ nav {
 .visible {
     transition: all .2s;
     position: absolute;
-    top: 37px;
-    right: 25%;
+    top: 45px;
+    right: 30%;
     opacity: 1;
 }
 
