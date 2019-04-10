@@ -1,10 +1,10 @@
-// MENU
+/* MENU ------------------------------------------ */
 
-let menu = document.getElementById("menu");
-let nav = document.getElementById("nav-link");
+let menu = document.querySelector("#menu");
+let nav = document.querySelector("#nav-link");
 let menuActive = false;
 
-menu.addEventListener('click', function (e) {
+menu.addEventListener("click", function (e) {
     if (!menuActive) {
         menu.children[0].style.position = "relative";
         menu.children[0].style.transform = "rotate(405deg)";
@@ -30,15 +30,15 @@ menu.addEventListener('click', function (e) {
 });
 
 
+/* BTN CONTACT HEADER ------------------------------------------ */
 
-
-let btnContact = document.getElementById('btnContact');
-let contactBox = document.getElementsByClassName("contact_box")[0];
+let btnContact = document.querySelector("#btnContact");
+let contactBox = document.querySelector(".contact_box");
 
 btnContact.onclick = function (e) {
     let val = contactBox.getBoundingClientRect().top;
     let i = 0;
-    let y = setInterval(function () {
+    let y = setInterval(() => {
         if (i < val) {
             window.scrollTo(window.scrollX, i);
             i += 40;

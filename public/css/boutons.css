@@ -3,10 +3,9 @@
 .newButton {
     width: 150px;
     text-align: center;
-    background: linear-gradient(rgb(165, 247, 110), var(--couleur-secondaire));
-    /* background: linear-gradient(#FFBA75, var(--couleur-secondaire)); */
+    background: var(--couleur-secondaire);
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -15,34 +14,17 @@
     outline: none;
     text-decoration: none;
     display: block;
-    border-bottom: 0px;
+    border-bottom: 4px solid #007f21;
 }
 
 .newButton:hover {
     box-shadow: silver 5px 10px 15px;
-    border-bottom: 0px;
+    border-bottom: 4px solid #007f21;
 }
 
 .newButton:active {
     padding: 19px;
-    background: var(--couleur-secondaire);
+    background: #007f21;
+    border-bottom: 0px;
+    margin-bottom: +4px;
 }
-
-/* #btn-contact {
-    transition: all .2s;
-    background: white;
-    padding: 15px;
-    border-radius: 40px;
-    width: 100px;
-    text-align: center;
-    color: var(--couleur-secondaire);
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    top: 10px;
-}
-
-#btn-contact:hover {
-    background: var(--couleur-secondaire);
-    color: white;
-} */

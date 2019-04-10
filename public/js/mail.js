@@ -1,9 +1,18 @@
 // MAIL
-let btnSubmit = document.getElementById('btnSubmit');
+let btnSubmit = document.querySelector("#btnSubmit");
 
 btnSubmit.onclick = () => {
-    let emailAddress = document.getElementById('emailAddress').value;
-    let message = document.getElementById('message').value;
+    let emailAddress = document.querySelector("#emailAddress").value;
+    let message = document.querySelector("#message").value;
+    let formulaire = document.querySelector("form");
+    let divReponse = document.querySelector("#reponse");
+
+    divReponse.innerHTML = "";
+    divReponse.style.display = "block";
+    let gifLoading = document.createElement("img");
+    gifLoading.src = "/img/loading.gif";
+    gifLoading.style.width = "25px";
+    divReponse.appendChild(gifLoading);
 
     if (emailAddress.length >= 10 && message.length >= 10 && emailAddress.includes('@')) {
         let xhr = new XMLHttpRequest();
@@ -11,19 +20,22 @@ btnSubmit.onclick = () => {
             if (xhr.readyState === 4) {
                 console.log(xhr.responseText);
                 if (xhr.responseText == 'ok') {
-                    document.getElementsByTagName('form')[0].innerHTML += '<div style="background:yellowgreen; color: white; padding: 20px; text-align:center; margin-top: 40px; border-radius: 20px;">Votre message a été envoyé avec succès. J\'y répondrai dans les meilleurs délais</div>';
-                    window.scrollTo(0, document.body.scrollHeight);
+                    divReponse.innerHTML = "";
+                    divReponse.style.backgroundColor = "yellowgreen";
+                    divReponse.innerText = "Votre message a été envoyé avec succès. J'y répondrai dans les meilleurs délais.";
                 } else if (xhr.responseText == 'error') {
-                    document.getElementsByTagName('form')[0].innerHTML += '<div style="background:red; color: white; padding: 20px; text-align:center; margin-top: 40px; border-radius: 20px;">Désolé il semble qu\'il y ait eu une erreur. Merci de réesayer</div>';
-                    window.scrollTo(0, document.body.scrollHeight);
+                    divReponse.innerHTML = "";
+                    divReponse.style.backgroundColor = "red";
+                    divReponse.innerText = "Il y a eu une erreur au niveau du serveur.<br>Merci de réesayer dans quelques minutes."
                 }
             }
         }
         xhr.open('POST', '/mail', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send('emailAddress=' + emailAddress + '&message=' + message);
+        xhr.send(`emailAddress=${emailAddress}&message=${message}`);
     } else {
-        document.getElementsByTagName('form')[0].innerHTML += '<div style="background:red; color: white; padding: 20px; text-align:center; margin-top: 40px; border-radius: 20px;">Merci de bien remplir les champs demandés</div>';
-        window.scrollTo(0, document.body.scrollHeight);
+        divReponse.innerHTML = "";
+        divReponse.style.backgroundColor = "red";
+        divReponse.innerText = "Merci de bien remplir les champs demandés";
     }
 }

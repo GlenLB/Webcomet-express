@@ -4,7 +4,6 @@ html {
     --couleur-primaire: #0031C2;
     --couleur-secondaire: rgb(74, 172, 9);
     /* --couleur-secondaire: #ff8000; */
-
 }
 
 /* GLOBAL --------------------------- */
@@ -22,6 +21,10 @@ body {
     overflow-x: hidden;
     width: 100%;
     height: 100%;
+}
+
+input {
+    font-family: "Open Sans", sans-serif;
 }
 
 li {

@@ -35,6 +35,19 @@ nav {
     margin: 0px;
 }
 
+.lien-logo>i {
+    position: relative;
+    top: -25px;
+    color: white;
+    background-color: var(--couleur-secondaire);
+    font-style: normal;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    /* border: 1px dashed white; */
+}
+
 #nav-link a {
     color: white;
     font-weight: bold;
@@ -60,17 +73,17 @@ nav {
     opacity: 1;
 }
 
-@media all and (max-width: 950px) {
+@media (max-width: 700px) {
     .visible {
-        top: 80px;
-        right: 30px;
+        top: 125px;
+        right: 15px;
     }
 }
 
-@media all and (min-width: 1200px) {
+@media (max-width: 900px) {
     .visible {
-        top: 37px;
-        right: 35%;
+        top: 100px;
+        right: 20px;
     }
 }
 
