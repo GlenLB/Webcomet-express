@@ -48,3 +48,18 @@ btnContact.onclick = function (e) {
     }, 10);
     e.stopPropagation();
 }
+
+
+/* BANNIERE COOKIES --------------------------------------- */
+
+const btnOKBanniereCookies = document.querySelector("#btnOKBanniereCookies");
+const banniereCookies = document.querySelector("#banniereCookies");
+const cookiesAcceptes = document.cookie.split(";").map(mot => mot.trim()).includes("cookiesAcceptes=true");
+if (!cookiesAcceptes) {
+    banniereCookies.style.display = "flex";
+}
+btnOKBanniereCookies.onclick = () => {
+    banniereCookies.style.display = "none";
+    /* Durée du cookie de 90 jours */
+    document.cookie = "cookiesAcceptes=true;max-age=60*60*24*90";
+}

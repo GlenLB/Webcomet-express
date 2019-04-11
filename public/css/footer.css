@@ -12,3 +12,48 @@ footer a {
     color: white;
     border-bottom: 2px dashed var(--couleur-secondaire);
 }
+
+#banniereCookies {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: var(--couleur-primaire);
+    color: white;
+}
+
+#banniereCookies>:nth-child(2) {
+    padding: 5px;
+    box-shadow: 0 0 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#banniereCookies>a:last-child {
+    padding: 5px;
+    box-shadow: 0 0 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    border: 2px solid silver;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    #banniereCookies {
+        font-size: 12px;
+    }
+    #banniereCookies>a:first-child {
+        padding: 5px;
+        box-shadow: 0 0 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+}

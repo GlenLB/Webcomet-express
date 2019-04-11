@@ -4,12 +4,21 @@
     </p>
 </footer>
 
-<script src="/js/global.js"></script>
-<script src="/js/mail.js"></script>
+<!-- Bannière cookies -->
+<div id="banniereCookies">
+    <p>
+        En poursuivant votre navigation sur ce site internet, vous déclarez accepter les cookies utilisés par ce site.
+    </p>
+    <a id="btnOKBanniereCookies" class="newButton" href="#0">OK</a>
+    <a href="/mentions-legales#cookies">En savoir plus</a>
+</div>
+
+<script defer src="/js/global.js"></script>
+<script defer src="/js/mail.js"></script>
 
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121365291-1"></script>
-<script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-121365291-1"></script>
+<script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
