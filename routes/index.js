@@ -41,10 +41,10 @@ router.get('/', function (req, res, next) {
 /* Page création de sites vitrine */
 router.get("/webmaster-creation-site-vitrine", function (req, res, next) {
 	let p = new Page(
-		"Webmaster Rennes : Création de site vitrine à Rennes et SEO",
-		"Vous avez besoin d'un site vitrine pour présenter votre activité ? Webmaster basé à Rennes, je peux vous créer un site vitrine correspondant à vos besoins quelle que soit votre localisation dans le monde.",
+		"Webmaster Rennes &#x2022; Création de site vitrine professionnel et SEO",
+		"Vous avez besoin d'un site vitrine professionnel pour présenter votre activité ? Webmaster basé à Rennes, je peux vous créer un site vitrine correspondant à vos besoins quelle que soit votre localisation dans le monde.",
 		creerUrlCanonique(req, res),
-		"Création de site vitrine professionnel<br>Développeur web basé à Rennes"
+		"Création de site vitrine professionnel<br>Webmaster basé à Rennes"
 	)
 	res.render("creation_site_vitrine", p);
 });
