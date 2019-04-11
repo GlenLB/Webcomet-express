@@ -61,5 +61,5 @@ if (!cookiesAcceptes) {
 btnOKBanniereCookies.onclick = () => {
     banniereCookies.style.display = "none";
     /* Durée du cookie de 90 jours */
-    document.cookie = "cookiesAcceptes=true;max-age=60*60*24*90";
+    document.cookie = `cookiesAcceptes=true;max-age=${60*60*24*90}`;
 }
