@@ -30,8 +30,8 @@ function creerUrlCanonique(req, res) {
 /* Page d'accueil */
 router.get('/', function (req, res, next) {
 	let p = new Page(
-		"WebComet.fr &#x2022; Webmaster à Rennes &#x2022; Création de site internet à Rennes &#x2022; Consultant SEO freelance",
-		"Vous cherchez un webmaster ou développeur web freelance pour créer votre site internet à Rennes ou ailleurs ? Vous cherchez un consultant SEO pour améliorer votre référencement naturel ? Alors contactez-moi, car je dispose des compétences pour vous créer un site internet au référencement naturel optimisé pour que votre site web soit visible sur les moteurs de recherche comme Google.",
+		"WebComet.fr &#x2022; Webmaster à Rennes &#x2022; Création de site internet et SEO",
+		"Vous cherchez un webmaster ou un développeur web freelance pour créer votre site internet à Rennes ou ailleurs ? Vous cherchez un consultant SEO pour améliorer votre référencement naturel ? Alors contactez-moi, car je dispose des compétences pour vous créer un site internet au référencement naturel optimisé pour que votre site web soit visible sur les moteurs de recherche comme Google.",
 		creerUrlCanonique(req, res),
 		"Création de site internet &#x2022; Webmaster à Rennes<br>Référencement naturel SEO"
 	)
@@ -63,10 +63,10 @@ router.get("/consultant-seo", function (req, res, next) {
 /* Page conditions générales */
 router.get("/conditions-generales", function (req, res, next) {
 	let p = new Page(
-		"Webcomet.fr - Conditions générales de vente",
-		"Webcomet.fr - Conditions générales de vente",
+		"WebComet.fr - Conditions générales de vente",
+		"WebComet.fr - Conditions générales de vente",
 		creerUrlCanonique(req, res),
-		"Webcomet.fr - Conditions générales de vente"
+		"WebComet.fr - Conditions générales de vente"
 	)
 	res.render("conditions_generales", p);
 });
@@ -74,10 +74,10 @@ router.get("/conditions-generales", function (req, res, next) {
 /* Page mentions légales */
 router.get("/mentions-legales", function (req, res, next) {
 	let p = new Page(
-		"Webcomet.fr - Mentions légales",
-		"Webcomet.fr - Mentions légales",
+		"WebComet.fr - Mentions légales",
+		"WebComet.fr - Mentions légales",
 		creerUrlCanonique(req, res),
-		"Webcomet.fr - Mentions légales"
+		"WebComet.fr - Mentions légales"
 	)
 	res.render("mentions_legales", p);
 });
