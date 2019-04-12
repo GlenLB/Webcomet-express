@@ -1,37 +1,20 @@
-.point {
-    font-size: 35px;
-    color: var(--couleur-primaire);
-}
+/* PAGE D'ACCUEIL --------------------- */
 
 .box {
-    transition: box-shadow .2s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 230px;
-    z-index: 3;
+    transition: box-shadow .2s;
     box-shadow: 0px 0px 10px silver;
     border-radius: 10px;
-    max-width: 900px;
     width: 90%;
+    max-width: 900px;
     margin: auto;
-    margin-bottom: 80px;
-    padding-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .box:hover {
     box-shadow: 0px 0px 20px silver;
-}
-
-@media all and (max-width: 950px) {
-    .box {
-        flex-direction: column;
-        text-align: center;
-    }
-    .box .newButton {
-        position: relative;
-        left: calc(50% - 95px);
-    }
 }
 
 .box .box-header {
@@ -45,19 +28,24 @@
 
 .box .box-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     background: white;
-    width: 90%;
+    width: 95%;
     padding: 10px;
+    min-height: 210px;
 }
 
-@media all and (max-width: 950px) {
-    .box .box-main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 20px;
-    }
+.box-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    max-width: 280px;
+}
+
+.box-text h2 {
+    margin-bottom: 0px;
 }
 
 #creation_site_web_img {
@@ -66,52 +54,49 @@
     height: 100%;
 }
 
-@media all and (max-width: 950px) {
-    #creation_site_web_img {
-        width: 80%;
-        margin-bottom: -10px;
-    }
-}
-
 #seo_img {
-    width: 300px;
+    width: 250px;
     max-width: 350px;
     height: 100%;
 }
 
-@media all and (max-width: 950px) {
+@media all and (max-width: 800px) {
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .box>.box-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .box-text {
+        order: 2;
+        max-width: 400px;
+        text-align: center;
+    }
+    #creation_site_web_img {
+        width: 80%;
+        margin-bottom: -10px;
+    }
     #seo_img {
         width: 80%;
         order: 1;
         margin-bottom: 10px;
-    }
-}
-
-.box-text {
-    display: flex;
-    flex-direction: column;
-    max-width: 330px;
-}
-
-.box-text h2 {
-    margin-bottom: 0px;
-}
-
-@media all and (max-width: 950px) {
-    .box-text {
-        order: 2;
+        padding-top: 10px;
     }
 }
 
 @media all and (min-width: 1200px) {
     #box1 {
-        margin-top: -900px;
+        margin-top: -920px;
     }
     #elem1 {
         margin-top: -980px;
     }
     .box {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         width: 1200px;
         justify-content: space-around;
     }
