@@ -5,7 +5,6 @@ footer {
     padding-bottom: 40px;
     background-color: var(--couleur-primaire);
     color: white;
-    font-size: 14px;
 }
 
 footer a {
@@ -46,6 +45,9 @@ footer a {
 }
 
 @media (max-width: 700px) {
+    footer {
+        padding: 20px;
+    }
     #banniereCookies {
         font-size: 12px;
     }
