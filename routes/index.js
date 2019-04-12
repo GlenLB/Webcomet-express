@@ -52,7 +52,7 @@ router.get("/webmaster-creation-site-vitrine", function (req, res, next) {
 /* Page consultant SEO */
 router.get("/consultant-seo", function (req, res, next) {
 	let p = new Page(
-		"Consultant SEO à Rennes - Consultant référencement naturel freelance",
+		"Consultant SEO à Rennes &#x2022; Consultant référencement naturel freelance",
 		"Consultant SEO freelance à Pacé près de Rennes, je dispose des compétences pour améliorer la visibilité de votre site web sur les moteurs de recherche comme Google. En améliorant le référencement naturel de votre site internet, vous capterez plus de trafic qualifié sur votre site web.",
 		creerUrlCanonique(req, res),
 		"Consultant SEO à Rennes<br>Référencement naturel à Rennes"
@@ -63,10 +63,10 @@ router.get("/consultant-seo", function (req, res, next) {
 /* Page conditions générales */
 router.get("/conditions-generales", function (req, res, next) {
 	let p = new Page(
-		"WebComet.fr - Conditions générales de vente",
-		"WebComet.fr - Conditions générales de vente",
+		"WebComet.fr &#x2022; Conditions générales de vente",
+		"WebComet.fr &#x2022; Conditions générales de vente",
 		creerUrlCanonique(req, res),
-		"WebComet.fr - Conditions générales de vente"
+		"WebComet.fr &#x2022; Conditions générales de vente"
 	)
 	res.render("conditions_generales", p);
 });
@@ -74,10 +74,10 @@ router.get("/conditions-generales", function (req, res, next) {
 /* Page mentions légales */
 router.get("/mentions-legales", function (req, res, next) {
 	let p = new Page(
-		"WebComet.fr - Mentions légales",
-		"WebComet.fr - Mentions légales",
+		"WebComet.fr &#x2022; Mentions légales",
+		"WebComet.fr &#x2022; Mentions légales",
 		creerUrlCanonique(req, res),
-		"WebComet.fr - Mentions légales"
+		"WebComet.fr &#x2022; Mentions légales"
 	)
 	res.render("mentions_legales", p);
 });
