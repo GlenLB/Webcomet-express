@@ -167,6 +167,10 @@ main {
     margin-left: 10px;
 }
 
+.box-portfolio-text p {
+    text-indent: 0px;
+}
+
 @media all and (max-width: 950px) {
     .portfolio-row {
         flex-direction: column;

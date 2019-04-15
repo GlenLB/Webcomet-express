@@ -60,6 +60,17 @@ router.get("/consultant-seo", function (req, res, next) {
 	res.render("consultant_seo", p);
 });
 
+/* Portfolio DIWA */
+router.get("/portfolio-diwa", function (req, res, next) {
+	let p = new Page(
+		"Portfolio Glen Le Baill pour candidature LP DIWA",
+		"Portfolio Glen Le Baill pour candidature LP DIWA",
+		creerUrlCanonique(req, res),
+		"Glen Le Baill &#x2022; Portfolio web"
+	)
+	res.render("portfolio_diwa", p);
+});
+
 /* Page conditions générales */
 router.get("/conditions-generales", function (req, res, next) {
 	let p = new Page(

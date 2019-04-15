@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Feuille de styles CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <title><%- titre %></title>
+    <meta name="description" content="<%- description %>">
+    <link rel="canonical" href="<%= urlCanonique %>">
+
+    <!-- Pour les réseaux sociaux -->
+    <meta property="og:title" content="<%- titre %>" />
+    <meta property="og:image" content="https://webcomet.fr/img/capture.png" />
+    <meta property="og:description" content="<%- description %>" />
+    <meta property="og:url" content="<%= urlCanonique %>" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-container">
+            <h1><%- h1 %></h1>
+        </div>
+    </div>
+
+    <div class="separator-container">
+        <span class="separator"></span>
+        <span class="separator2"></span>
+    </div>
+
+
+    <main>
+        <div class="content" id="elem1">
+            <h2 class="titre">Mon parcours</h2>
+            <p>
+                Après plusieurs années professionnelles effectuées à la sortie du lycée dans des domaines divers, j'ai commencé à apprendre l'informatique en autodidacte. Commencant à être passionné par le sujet, et plus particulièrement par le développement web, j'ai commencé à créer des sites internet d'affiliation qui nécessitaient un bon référencement. Au fur et à mesure j'ai acquis des compétences potentiellement utiles pour des clients, et j'ai débuté mon activité d'auto-entrepreneur en création de sites web et prestations SEO.
+            </p>
+            <p>
+                Parallèlement, j'ai débuté des études en informatique à l'université de Rennes 1 pour apprendre différemment et obtenir un diplôme validant mes compétences. Cette formation universitaire en informatique, assez éloignée du développement web, m'a permis d'acquérir un raisonnement scientifique dans mon approche avec l'informatique. J'ai de plus beaucoup appris dans divers domaines de l'informatique, tels que l'algorithmique, le développement logiciel, l'orienté objet, la programmation fonctionnelle, les bases de données relationnelles et le SQL, les schémas conceptuels tels que Merise et UML, les réseaux, le génie logiciel, le versionning avec Git, Github et Gitlab.
+            </p>
+            <p>
+                Terminant actuellement ma L2 informatique à l'université de Rennes 1, je souhaite intégrer une licence professionnelle principalement pour me rapprocher du développement web et commencer à acquérir une expérience professionnelle dans le domaine de l'informatique.
+            </p>
+            <p>
+                Je vais vous montrer les sites web que j'ai créé sur-mesure, sans CMS.
+            </p>
+
+            <h2 class="titre mt7">Mes créations de sites internet</h2>
+
+            <div id="portfolio-diwa" class="portfolio-container">
+                <div class="portfolio-row">
+                    <div class="box-portfolio">
+                        <img src="/img/portfolio/capture_webcomet_small.png" alt="WebComet.fr">
+                        <div class="box-portfolio-text">
+                            <h3>WebComet.fr</h3>
+                            <p>
+                                J'ai créé ce site internet comme vitrine pour mon activité d'auto-entrepreneur.<br><br>
+
+                                <b>Front-end :</b> HTML5, CSS3, JavaScript ES6+. Utilisation des variables CSS et imports CSS maintenant bien supportés, permettant d'éviter d'avoir à utiliser un préprocesseur CSS comme SASS et un task-runner comme Gulp. Utilisation des imports et exports JavaScript pour plus de modularité.<br><br>
+
+                                <b>Back-end :</b> Node.js, Express, EJS actuellement.<br>
+                                J'ai migré ce site web sur plusieurs technologies pour apprendre : PHP, Golang, et actuellement Node.js. Les versions PHP et Golang sont sur mon Github.<br><br>
+
+                                Utilisation de Git et Github pour la gestion des versions.<br>
+                                <a href="https://github.com/GlenLB/Webcomet-express">Le code source du projet sur Github.</a>
+                            </p>
+                            <a class="newButton" target="_blank" rel="external nofollow" href="https://webcomet.fr/">VOIR LE SITE</a>
+                        </div>
+                    </div>
+                    <div class="box-portfolio">
+                        <img src="/img/portfolio/emsam_serrurerie.jpg" alt="EmSam Serrurerie Nice">
+                        <div class="box-portfolio-text">
+                            <h3>EmSam Serrurerie Nice</h3>
+                            <p>
+                                Création d'un site vitrine pour une entreprise de serrurerie basée à Nice dans le cadre de mon activité d'auto-entrepreneur.<br>
+                                Site web créé sur-mesure, optimisé pour le SEO localement sur Nice et Monaco principalement.<br>
+                                Au niveau SEO, le site web est en avril 2019 à la 5ème position de la 1ère page pour les requêtes concurrentielles "serrurier nice" et "serrurier monaco" sur Google.fr.<br><br>
+
+                                <b>Front-end :</b> HTML5, SASS, JavaScript ES6+, Bootstrap, Gulp. Utilisation d'un template Bootstrap pour gagner du temps en début de projet.<br>
+                                Utilisation de Gulp pour automatiser les compilations SASS, et pour réaliser les concaténations et minifications de fichiers.<br><br>
+
+                                <b>Back-end :</b> PHP.<br>
+                            </p>
+                            <a class="newButton" target="_blank" rel="external nofollow" href="https://emsam-serrurerie.fr/">VOIR LE SITE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-row">
+                    <div class="box-portfolio">
+                        <img src="/img/portfolio/michele_barange.png" alt="Artiste peintre à Rennes">
+                        <div class="box-portfolio-text">
+                            <h3>Artiste peintre à Rennes</h3>
+                            <p>
+                                Création d'un site vitrine pour une artiste peintre à Rennes.<br>
+                                Site web créé sur-mesure, légèrement optimisé pour le SEO.<br><br>
+
+                                <b>Front-end :</b> HTML5, CSS3, JavaScript ES6+.<br>
+                                La particularité de ce site web a été la création d'un carousel comprenant beaucoup de peintures de l'artiste.<br><br>
+
+                                <b>Back-end :</b> Site web statique, hébergé sur du mutualisé Apache2.
+                            </p>
+                            <a class="newButton" target="_blank" rel="external nofollow" href="https://michelebarange.com/">VOIR LE SITE</a>
+                        </div>
+                    </div>
+                    <div class="box-portfolio">
+                        <img src="/img/portfolio/sauve-le-koala.png" alt="Sauve le koala - Jeu vidéo 2D">
+                        <div class="box-portfolio-text">
+                            <h3>Sauve le koala - Jeu vidéo 2D</h3>
+                            <p>
+                                J'ai créé ce site web pour un jeu vidéo 2D que j'ai créé en TypeScript et qui se joue en ligne. Ce projet a été l'occasion d'apprendre le TypeScript et les processus de programmation d'un jeu vidéo 2D, ainsi que JavaEE et Tomcat pour ce qui est de la partie serveur.<br>
+                                Le site web n'est actuellement plus en ligne mais le code source est stocké sur mon Github.<br><br>
+
+                                <b>Front-end :</b> HTML5, CSS3, JavaScript ES6+.<br><br>
+
+                                <b>Back-end :</b> JavaEE, JSP, serveur Tomcat. Base de données MySQL.<br><br>
+
+                                <a href="https://github.com/GlenLB/Sauve-le-koala">Le code source du projet sur Github.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-row">
+                    <div class="box-portfolio">
+                        <img src="/img/portfolio/earthloader.png" alt="Club de tennis Earthloader">
+                        <div class="box-portfolio-text">
+                            <h3>Club de tennis</h3>
+                            <p>
+                                Création d'un site internet pour un club de tennis pour un projet dans une matière de programmation web pour l'université. Développement en cours<br><br>
+
+                                <b>Front-end :</b> HTML5, CSS3, JavaScript ES6+. Utilisation des variables CSS et imports CSS. Utilisation des imports et exports JavaScript pour plus de modularité.<br><br>
+
+                                <b>Back-end :</b> PHP MVC avec création d'un routeur, base de données MySQL.<br><br>
+
+                                Utilisation de Git et Github pour la gestion des versions.<br>
+                                Le code source du projet est sur Github mais en private actuellement car les projets n'ont pas encore été rendus et notés. Je peux en revanche fournir le code source sur demande.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-portfolio">
+                        <img src="/img/portfolio/sieges_massants.png" alt="Sauve le koala - Jeu vidéo 2D">
+                        <div class="box-portfolio-text">
+                            <h3>Sauve le koala - Jeu vidéo 2D</h3>
+                            <p>
+                                Un exemple d'un des sites web que j'ai créé pour de l'affiliation avec Amazon. Ce site internet avait pour thématique les sièges et fauteuils de massage. Il n'est plus en ligne actuellement et le code source n'est pas sur mon Github. Je peux en revanche le fournir sur demande.<br><br>
+
+                                <b>Front-end :</b> HTML5, CSS3, JavaScript.<br><br>
+
+                                <b>Back-end :</b> PHP, base de données MySQL.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- INCLUSION DU FOOTER -->
+    <%- include("partials/footer") %>
+</body>
+
+</html>
