@@ -1,3 +1,43 @@
+/* RÉFÉRENCES CLIENTS -------------------------- */
+
+#referencesClients {
+    text-align: center;
+    border-top: 1px dotted var(--couleur-secondaire);
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#referencesClients>h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: var(--couleur-primaire);
+    text-transform: uppercase;
+}
+
+#referencesClients>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#referencesClients img {
+    margin: 10px;
+    width: 140px;
+}
+
+@media (max-width: 700px) {
+    #referencesClients>div {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* FORMULAIRE CONTACT -------------------------- */
+
 form {
     display: flex;
     flex-direction: column;
@@ -39,7 +79,7 @@ textarea {
     display: none;
     color: white;
     padding: 20px;
-    text-align:center;
+    text-align: center;
     margin-top: 20px;
     border-radius: 5px;
     width: 380px;
@@ -49,11 +89,9 @@ textarea {
     input[type="email"] {
         width: 98%;
     }
-
     textarea {
         width: 98%;
     }
-
     form>.newButton, #reponse {
         width: calc(98% - 20px);
     }
@@ -64,7 +102,6 @@ textarea {
     padding: 50px;
     color: white;
     text-align: center;
-    margin-top: 80px;
 }
 
 @media all and (max-width: 950px) {
