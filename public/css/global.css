@@ -47,3 +47,9 @@ a:hover {
     transition: .3s border-bottom;
     border-bottom: 2px dashed var(--couleur-secondaire);
 }
+
+code {
+    font-size: 14px;
+    background-color: #e7e7e7;
+    padding: 2px;
+}
