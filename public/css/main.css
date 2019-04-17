@@ -196,6 +196,14 @@ main {
     border-top-right-radius: 10px;
 }
 
+/* .prestations h5 {
+    color: var(--couleur-secondaire);
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: normal;
+} */
+
 .prestations ul {
     margin: 0px;
     padding: 20px;
