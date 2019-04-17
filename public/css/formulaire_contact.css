@@ -104,6 +104,11 @@ textarea {
     text-align: center;
 }
 
+.contact_box>p {
+    max-width: 450px;
+    margin: auto;
+}
+
 @media all and (max-width: 950px) {
     .contact_box {
         margin-top: 30px;

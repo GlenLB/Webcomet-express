@@ -31,22 +31,22 @@ function creerUrlCanonique(req, res) {
 router.get('/', function (req, res, next) {
 	let p = new Page(
 		"WebComet.fr &#x2022; Webmaster à Rennes &#x2022; Création de site internet et SEO",
-		"Vous cherchez un webmaster ou un développeur web freelance pour créer votre site internet à Rennes ou ailleurs ? Vous cherchez un consultant SEO pour améliorer votre référencement naturel ? Alors contactez-moi pour obtenir un site web optimisé pour le SEO.",
+		"Vous cherchez un webmaster ou un développeur web freelance pour la création de votre site internet à Rennes ou ailleurs ? Vous cherchez un consultant SEO pour améliorer votre référencement naturel ? Alors contactez-moi pour obtenir un site web optimisé pour le SEO.",
 		creerUrlCanonique(req, res),
-		"Création de site internet &#x2022; Webmaster à Rennes<br>Référencement naturel SEO"
+		"Création de site internet et SEO<br>Webmaster à Rennes"
 	)
 	res.render("index", p);
 });
 
-/* Page création de sites vitrine */
-router.get("/webmaster-creation-site-vitrine", function (req, res, next) {
+/* Page création de sites internet */
+router.get("/creation-site-internet", function (req, res, next) {
 	let p = new Page(
-		"Webmaster Rennes &#x2022; Création de site vitrine professionnel et SEO",
-		"Vous avez besoin d'un site vitrine professionnel pour présenter votre activité ? Webmaster basé à Rennes, je peux vous créer un site vitrine correspondant à vos besoins quelle que soit votre localisation dans le monde.",
+		"Création de site internet à Rennes et SEO &#x2022; Webmaster à Rennes",
+		"Vous avez besoin de faire réaliser la création d'un site internet pour présenter votre activité ? Webmaster basé à Rennes, je peux vous créer un site internet correspondant à vos besoins quelle que soit votre localisation dans le monde.",
 		creerUrlCanonique(req, res),
-		"Création de site vitrine professionnel<br>Webmaster basé à Rennes"
+		"Création de site internet à Rennes<br>Webmaster basé à Rennes"
 	)
-	res.render("creation_site_vitrine", p);
+	res.render("creation_site_internet", p);
 });
 
 /* Page consultant SEO */
@@ -114,6 +114,14 @@ router.post("/mail", function (req, res, next) {
 /* Page CV */
 router.get("/cv", function (req, res, next) {
 	res.sendFile(path.join(__dirname, "../views/cv.html"))
+});
+
+
+/* REDIRECTIONS -------------------------- */
+
+/* Page création de sites vitrine */
+router.get("/webmaster-creation-site-vitrine", function (req, res, next) {
+	res.redirect(301, "/creation-site-internet");
 });
 
 module.exports = router;
