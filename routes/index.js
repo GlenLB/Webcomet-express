@@ -31,7 +31,7 @@ function creerUrlCanonique(req, res) {
 router.get('/', function (req, res, next) {
 	let p = new Page(
 		"WebComet.fr &#x2022; Webmaster à Rennes &#x2022; Création de site internet et SEO",
-		"Vous cherchez un webmaster ou un développeur web freelance pour créer votre site internet à Rennes ou ailleurs ? Vous cherchez un consultant SEO pour améliorer votre référencement naturel ? Alors contactez-moi, car je dispose des compétences pour vous créer un site internet au référencement naturel optimisé pour que votre site web soit visible sur les moteurs de recherche comme Google.",
+		"Vous cherchez un webmaster ou un développeur web freelance pour créer votre site internet à Rennes ou ailleurs ? Vous cherchez un consultant SEO pour améliorer votre référencement naturel ? Alors contactez-moi pour obtenir un site web optimisé pour le SEO.",
 		creerUrlCanonique(req, res),
 		"Création de site internet &#x2022; Webmaster à Rennes<br>Référencement naturel SEO"
 	)
