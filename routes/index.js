@@ -30,7 +30,7 @@ function creerUrlCanonique(req, res) {
 /* Page d'accueil */
 router.get('/', function (req, res, next) {
 	let p = new Page(
-		"WebComet.fr &#x2022; Webmaster à Rennes &#x2022; Création de site internet et SEO",
+		"&#x21e8; WebComet.fr &#x2022; Webmaster à Rennes &#x2022; Création de site internet et SEO",
 		"Vous cherchez un webmaster ou un développeur web freelance pour la création de votre site internet à Rennes ou ailleurs ? Vous cherchez un consultant SEO pour améliorer votre référencement naturel ? Alors contactez-moi pour obtenir un site web optimisé pour le SEO.",
 		creerUrlCanonique(req, res),
 		"Création de site internet et SEO<br>Webmaster à Rennes"
@@ -41,7 +41,7 @@ router.get('/', function (req, res, next) {
 /* Page création de sites internet */
 router.get("/creation-site-internet", function (req, res, next) {
 	let p = new Page(
-		"Création de site internet à Rennes et SEO &#x2022; Webmaster à Rennes",
+		"&#x21e8; Création de site internet à Rennes et SEO &#x2022; Webmaster à Rennes",
 		"Vous avez besoin de faire réaliser la création d'un site internet pour présenter votre activité ? Webmaster basé à Rennes, je peux vous créer un site internet correspondant à vos besoins quelle que soit votre localisation dans le monde.",
 		creerUrlCanonique(req, res),
 		"Création de site internet à Rennes<br>Webmaster basé à Rennes"
@@ -52,7 +52,7 @@ router.get("/creation-site-internet", function (req, res, next) {
 /* Page consultant SEO */
 router.get("/consultant-seo", function (req, res, next) {
 	let p = new Page(
-		"Consultant SEO à Rennes &#x2022; Consultant référencement naturel à Rennes",
+		"&#x1F4C8; Consultant SEO à Rennes &#x2022; Consultant référencement naturel à Rennes",
 		"Consultant SEO indépendant à Rennes, je dispose des compétences pour améliorer la visibilité de votre site web sur les moteurs de recherche comme Google. En améliorant le référencement naturel de votre site internet, vous capterez plus de trafic qualifié sur votre site web.",
 		creerUrlCanonique(req, res),
 		"Consultant SEO à Rennes<br>Référencement naturel à Rennes"
