@@ -52,8 +52,8 @@ router.get("/creation-site-internet", function (req, res, next) {
 /* Page consultant SEO */
 router.get("/consultant-seo", function (req, res, next) {
 	let p = new Page(
-		"Consultant SEO à Rennes &#x2022; Consultant référencement naturel freelance",
-		"Consultant SEO freelance à Pacé près de Rennes, je dispose des compétences pour améliorer la visibilité de votre site web sur les moteurs de recherche comme Google. En améliorant le référencement naturel de votre site internet, vous capterez plus de trafic qualifié sur votre site web.",
+		"Consultant SEO à Rennes &#x2022; Consultant référencement naturel à Rennes",
+		"Consultant SEO indépendant à Rennes, je dispose des compétences pour améliorer la visibilité de votre site web sur les moteurs de recherche comme Google. En améliorant le référencement naturel de votre site internet, vous capterez plus de trafic qualifié sur votre site web.",
 		creerUrlCanonique(req, res),
 		"Consultant SEO à Rennes<br>Référencement naturel à Rennes"
 	)
