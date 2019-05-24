@@ -116,6 +116,11 @@ router.get("/cv", function (req, res, next) {
 	res.sendFile(path.join(__dirname, "../views/cv.html"))
 });
 
+/* Page CV2 */
+router.get("/cv2", function (req, res, next) {
+	res.sendFile(path.join(__dirname, "../views/cv2.html"))
+});
+
 
 /* REDIRECTIONS -------------------------- */
 
